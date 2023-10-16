@@ -5,6 +5,7 @@ import shutil
 from ppt2png import ppt2png
 import sys
 from PIL import Image, ImageTk
+from GestureControl import main
 
 # Variable to keep track of whether PNG files have been created
 png_files_created = False
@@ -55,8 +56,8 @@ def restart_application():
 # Function to start the presentation (to be called when "PRESENT" button is clicked)
 def start_presentation():
     if png_files_created:
-        # Add your code to start the presentation here
-        print("Starting presentation...")
+        main.Capture_gestures()
+
     else:
         result_label.config(text="Error: PNG files not created.", fg="red")
 

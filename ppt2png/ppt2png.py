@@ -2,7 +2,7 @@ import win32com.client
 import os
 
 # Specify the full path to the PowerPoint presentation
-presentation_path = r"C:\s7MultiMediaProject\Presentation\Presentation.pptx"
+presentation_path = r"C:\Users\Aswin\PycharmProjects\gesPre\Presentation\Presentation.pptx"
 
 # Create a PowerPoint application object
 Application = win32com.client.Dispatch("PowerPoint.Application")
